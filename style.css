@@ -17,6 +17,8 @@
     gap: 10px;
     align-items: center;
     flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100px;
 }
 
 .Udemy__s1 {
@@ -28,6 +30,7 @@
 .Udemy__s1--title {
     color: rgb(167, 87, 241);
 }
+/* -------------------------------------------------------- */
 
 .Udemy__s2 {
     padding: 10px;
@@ -51,6 +54,8 @@
     outline: none;
 }
 
+/* -------------------------------------------------------- */
+
 .Udemy__s3 {
     display: flex;
     flex-wrap: wrap;
@@ -72,16 +77,22 @@
 
 }
 
+
+/* -------------------------------------------------------- */
+
+
+
 .udemy__session2--head {
     display: flex;
     background-color: white;
     gap:10px; 
     align-items: center;
     flex-wrap: wrap;
+    flex-grow: 1;
     justify-content: space-around;
     padding: 5px;
     border-bottom: 2px solid black;
-    width: 100%;
+    flex-basis: 100px;
 }
 
 .udemy__catgoires {
@@ -89,6 +100,7 @@
     padding: 5px;
     border-radius: 30px;
     color: white;
+
 }
 
 .udemy__catgoires:hover {
@@ -101,7 +113,13 @@
     width: 100%;
     max-width: 100%;
     height: auto;
+    flex-grow: 1;
 }
+
+
+/* -------------------------------------------------------- */
+
+
 
 .udemy__course--recommend {
     padding: 20px;
@@ -111,20 +129,21 @@
 .coure__cotainer {
     display: flex;
     flex-wrap: wrap;
+    flex-grow:2;
     gap: 20px;
     justify-content: space-evenly;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 
 }
 
 .udemy__course {
-    width: 250px;
+    width: 200px;
     text-align: justify;
-    padding: 10px;
+    padding: 30px;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
-    margin: 10px;
+    margin: 20px;
     border-radius: 10px;
 }
 
@@ -138,30 +157,36 @@
 }
 
 .udemy__course--sales {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
 
 }
+
+/* -------------------------------------------------------- */
+
+.udemy__session3--head {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
 
 .udemy__session3 {
     display: flex;
     gap: 20px;
-    margin: 40px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
-.udemy__session3--head {
-    margin-left: 40px;
-}
 
 .udemy__session3--coursebox {
+    padding: 10px;
     border: 2px solid black;
-    width: 300px;
-    height: 30px;
-    text-align: left;
-    padding: 5px;
-
+    text-align: center;
+    flex-grow:1;
+    flex-basis:20%; 
+     
 }
 
 .udemy__session3--coursebox:hover {
@@ -173,6 +198,12 @@
     text-decoration: none;
     color: black;
 }
+
+
+
+/* -------------------------------------------------------- */
+
+
 
 .udemy__footer {
     height: 400px;
