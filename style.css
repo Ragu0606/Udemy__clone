@@ -180,11 +180,11 @@
  
 }
 .udemy__course {
-
     flex-basis: 20%;
     flex-grow: 1;
     margin: 5px;
-    height: 300px;
+    height: 320px;
+    text-align: center;
 }
 .udemy__course p{
     padding: 2px;
@@ -196,7 +196,7 @@
 }
 .udemy__course--sales {
     width: 100%;
-    height: 40%;
+    height: 50%;
 }
 
 /* -------------------------------------------------------- */
