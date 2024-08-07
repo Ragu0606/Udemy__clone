@@ -11,8 +11,7 @@
 
 .Udemy__navi {
     background-color: black;
-    /* height:fit-content;
-    width: 100dvh; */
+    width: 100%;
     color: white;
     position: sticky;
     top: 0; 
@@ -21,8 +20,8 @@
 
 .udemy--navbar {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    justify-content:space-between;
     align-items: center;
     gap: 20px;
     padding: 10px;
@@ -69,6 +68,8 @@
     padding: 10px;
     text-align:center;
     display: none;
+    flex-basis: 10%;
+    flex-grow: 1;
 
 }
 
@@ -141,13 +142,12 @@
 
 }
 .sale__image--offer{
-    height: 150px;
+    padding: 5px;
     border: solid 2px black ;
     position: absolute;
     top: 30%;
-    left: 100px;
-    width:350px;
-    background-color: rgba(255, 255, 255, 0.586);
+    left: 20px;
+    background-color: rgba(255, 161, 9, 0.586);
     animation-name:zoom ;
     animation-duration: 3S;
     opacity: 0;
@@ -165,12 +165,6 @@
         transform: scale(1);
     }
 }
-.sale__image--offer h2{
-    padding: 5px;
-}
-.sale__image--offer p{
-    padding: 10px;
-}
 
 /* -------------------------------------------------------- */
 
@@ -184,36 +178,29 @@
 .coure__cotainer {
     display: flex;
     flex-wrap: wrap;
-    flex-grow:2;
-    gap: 20px;
-    justify-content: space-evenly;
-    margin-left: 20px;
-    margin-right: 20px;
-
+    
 }
 
 .udemy__course {
-    width: 200px;
-    text-align: justify;
-    padding: 30px;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-    margin: 20px;
-    border-radius: 10px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    text-align: center;
+    margin: 5px;
+ 
+  
 }
 
 .udemy__course:hover {
     background-color: rgb(249, 247, 247);
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
     border-radius: 10px;
-    padding: 15px;
+    transition: 3s;
 
 }
 
 .udemy__course--sales {
-    width: 200px;
-    height: 100px;
+
+    width:250px;
+    height: 200px;
 
 }
 
@@ -231,14 +218,16 @@
     flex-wrap: wrap;
     margin-left: 20px;
     margin-right: 20px;
+    justify-content: space-evenly;
 
 }
 
 
 .udemy__session3--coursebox {
-    padding: 10px;
-    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
     text-align: center;
+    border: 2px solid black;
     flex-grow:1;
     flex-basis:20%; 
      
@@ -263,8 +252,8 @@
 
 
 .udemy__footer {
-    height: 350px;
-    width: 100dvw;
+    height: 300px;
+    margin: 10px;
     background-color: black;
     padding: 30px;
     overflow: hidden;
@@ -300,3 +289,43 @@
     align-items: end;
 
 }
+
+@media screen and (max-width:800px){
+
+    body{
+        font-size:12px ;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+
+  .udemy__course {
+    flex-basis:10% ;
+    flex-grow: 2;
+  }
+}
+@media screen and (max-width:600px) {
+    .udemy__session2--head{
+        display: none;
+    }
+    .sale__image--offer{
+        width: 200px;
+        height:100px ;
+    }
+    .Udemy__s3{
+        display: none;
+    }
+    .Udemy__s4{
+        display: none;
+    }
+
+    .sale__image--offer{
+        font-size: 10px;
+        height: fit-content;
+    }
+}
+
+
+
+  
