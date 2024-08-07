@@ -1,40 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Kalnia+Glaze&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+
 * {
-    font-family: "Poppins", sans-serif;
-    padding: 0;
     margin: 0;
-    overflow-x: hidden;
-
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    
 }
-
 
 .Udemy__navi {
-    display: flex;
-    padding: 10px;
-    justify-content: space-evenly;
-    border-bottom: 2px solid black;
-    gap: 10px;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-basis: 100px;
+    background-color: black;
+    /* height:fit-content;
+    width: 100dvh; */
+    color: white;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
 }
 
-.Udemy__s1 {
-    align-items: center;
+.udemy--navbar {
     display: flex;
-   
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
 }
 
 .Udemy__s1--title {
-    color: rgb(167, 87, 241);
+    font-size: 24px;
+    color: #D95BFF;
 }
-/* -------------------------------------------------------- */
 
 .Udemy__s2 {
     padding: 10px;
-    border: solid 2px black;
+    border: solid 2px rgb(255, 255, 255);
     border-radius: 40px;
     width: 60%;
     display: flex;
@@ -47,14 +48,42 @@
     border: none;
     width: 90%;
     font-size: 16px;
-
+    background-color: transparent;
+    color: white;
 }
 
 .Udemy__s2 input:focus {
     outline: none;
 }
 
-/* -------------------------------------------------------- */
+
+.mylearning{
+    position: relative;
+}
+.mylearning__course{
+    position: absolute;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    top: 150%;
+    padding: 10px;
+    text-align:center;
+    display: none;
+
+}
+
+.mylearning:hover .mylearning__course{
+    display: block;
+    
+}
+.Udemy__s2--title a{
+    text-decoration: none;
+    color: white;
+}
+/* .Udemy__s2--title a:hover{
+
+} */
+
 
 .Udemy__s3 {
     display: flex;
@@ -65,22 +94,12 @@
 }
 
 .Udemy__s3 p {
-    color: black;
-    text-decoration: underline 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-right: 20px;
 }
 
-.Udemy__s3 p:hover {
-    color: rgb(167, 87, 241);
-
-}
-
-
-/* -------------------------------------------------------- */
-
-
+/* .Udemy__s3 p:hover {
+    color: #cacaca; 
+} */
 
 .udemy__session2--head {
     display: flex;
@@ -93,29 +112,49 @@
     padding: 5px;
     border-bottom: 2px solid black;
     flex-basis: 100px;
+ 
 }
 
 .udemy__catgoires {
-    background-color: #D95BFF;
+    background-color: #b430dc;
     padding: 5px;
     border-radius: 30px;
+    border: 2px solid;
     color: white;
-
 }
 
 .udemy__catgoires:hover {
     background-color: white;
     color: black;
     border: 2px solid #D95BFF;
+    transition: .5s;
 }
 
+.Udemy-Logo--sale{
+    position: relative;
+}
 .Udemy-Logo--sale img {
     width: 100%;
-    max-width: 100%;
     height: auto;
     flex-grow: 1;
-}
+    position: relative;
 
+}
+.sale__image--offer{
+    height: 150px;
+    border: solid 2px black ;
+    position: absolute;
+    top: 30%;
+    left: 100px;
+    width:350px;
+    background-color: rgba(255, 255, 255, 0.586);
+}
+.sale__image--offer h2{
+    padding: 5px;
+}
+.sale__image--offer p{
+    padding: 10px;
+}
 
 /* -------------------------------------------------------- */
 
@@ -199,17 +238,20 @@
     color: black;
 }
 
-
+#main{
+    overflow: hidden;
+}
 
 /* -------------------------------------------------------- */
 
 
 
 .udemy__footer {
-    height: 400px;
-    width: 100%;
+    height: 350px;
+    width: 100dvw;
     background-color: black;
     padding: 30px;
+    overflow: hidden;
 
 }
 
