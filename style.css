@@ -278,8 +278,9 @@
     }
     
     .Udemy__s4{
-        display:block ;
+        display: none;
     }
+  
 }
 
 @media screen and (max-width:600px){
@@ -304,7 +305,7 @@
         display: none;
     }
     .Udemy__s4{
-        display: none;
+        display:block ;
     }
 
     .sale__image--offer{
