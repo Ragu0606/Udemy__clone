@@ -277,6 +277,9 @@
         font-size:12px ;
     }
     
+    .Udemy__s4{
+        display:block ;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -285,6 +288,7 @@
         flex-grow: 1;
         height: 250px;
     }
+   
 
   
 }
